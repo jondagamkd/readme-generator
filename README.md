@@ -21,7 +21,7 @@ This handy little app can be used to generate a readme file with markdown langua
 
 ## Installation
 
-Simply clone the code onto your machine.
+Simply clone the code onto your machine and be sure to install dependencies with nmp install.
 
 
 ## Usage 
