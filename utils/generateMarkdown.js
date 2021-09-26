@@ -1,4 +1,3 @@
-// TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   let licenseBadge = '';
   if (data.license === "MIT") {
@@ -10,17 +9,16 @@ function generateMarkdown(data) {
   else if (data.license === "AGPL") {
     licenseBadge = '[![AGPL License](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)';
   }
-  return `
+  return `${licenseBadge}
 <br />
 <p align="center">
   <h1 align="center">${data.title}</h1>
 </p>
 
-${licenseBadge}
-
 ## Description 
 
 ${data.description}
+
 
 ## Table of Contents
 
@@ -31,27 +29,33 @@ ${data.description}
 * [License](#license)
 * [Questions](#questions)
 
+
 ## Installation
 
 ${data.install}
+
 
 ## Usage 
 
 ${data.usage}
 
+
 ## Contributing
 
 ${data.contribution}
 
+
 ## Tests
 
 ${data.test}
+
 
 ## License
 
 This project is covered under the ${data.license} license.
 
 ${licenseBadge}
+
 
 ## Questions
 

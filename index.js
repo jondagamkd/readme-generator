@@ -54,11 +54,11 @@ inquirer
     }
   ]) // Write the user response to a file by chaining the below callback method to the prompt above.
   .then(function(data) {
-    fs.writeFile('README2.md', generateMarkdown(data), function(err) {
+    fs.writeFile('./myReadme/README.md', generateMarkdown(data), function(err) {
       if (err) {
         return console.log(err);
       }
 
-      console.log('Success!');
+      console.log('Success!  Your readme is now in the myReadme folder.');
     });
   });
